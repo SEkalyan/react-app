@@ -24,6 +24,10 @@ a {
   color: inherit;
 }
 
+button {
+  font: inherit;
+}
+
 .page {
   display: grid;
   min-height: 100vh;
@@ -63,14 +67,22 @@ h1 {
   line-height: 1.7;
 }
 
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .button {
   display: inline-flex;
   min-height: 44px;
   align-items: center;
   justify-content: center;
+  border: 0;
   border-radius: 6px;
   background: #172033;
   color: #ffffff;
+  cursor: pointer;
   font-weight: 700;
   padding: 0 18px;
   text-decoration: none;
@@ -78,6 +90,17 @@ h1 {
 
 .button:hover {
   background: #2563eb;
+}
+
+.buttonSecondary {
+  border: 1px solid #c9d2e3;
+  background: #ffffff;
+  color: #172033;
+}
+
+.buttonSecondary:hover {
+  border-color: #2563eb;
+  background: #eef4ff;
 }
 
 @media (max-width: 560px) {

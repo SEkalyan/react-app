@@ -3,6 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./style.css";
 
 function App() {
+  function handleLogin() {
+    alert("Login clicked");
+  }
+
   return (
     <main className="page">
       <section className="hero">
@@ -12,9 +16,18 @@ function App() {
           This is a small, clean starting point for learning React, TypeScript,
           and modern frontend development.
         </p>
-        <a className="button" href="https://react.dev" target="_blank">
-          Learn React
-        </a>
+        <div className="actions">
+          <button className="button" type="button" onClick={handleLogin}>
+            Login
+          </button>
+          <a
+            className="button buttonSecondary"
+            href="https://react.dev"
+            target="_blank"
+          >
+            Learn React
+          </a>
+        </div>
       </section>
     </main>
   );
